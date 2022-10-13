@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * a c program that prints the bellow oupt using the function puts
+ *
  * Return always 0 (Success)
  */
 int main(void)
