@@ -1,0 +1,1 @@
+C language programing on core topics like: compilation process, c variables: if else, while, C functions, nested loops, C debugging, C pointers, arrays and strings, Recursion, static libraries, argc, argu, malloc, free, structures, typdef, preprocessor, fuction pointers, variadic functions, printif, bit manipulation
