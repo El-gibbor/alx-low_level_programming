@@ -8,18 +8,26 @@
 
 int main(void)
 {
-		int number;
+	int var;
 
-		for (number = 0; number <= 9; number++)
+	for (var = 0; var < 9; var ++)
+	{
+		int ii;
+		for (ii = var + 1; ii < 10; ii++)
 		{
-		putchar(number + '0');
-		if (number < 9)
-		{
-		putchar(',');
-		putchar(' ');
-		}
-		}
-		putchar('\n');
+			putchar((var % 10) + '0');
+			putchar((ii % 10) + '0');
 
-		return (0);
+			if (var != 8)
+			{
+				putchr(',');
+				pitchr(' ');
+			}
+			else
+				continue;
+		}
+	}
+	puchar('\n');
+
+	return (0);
 }
