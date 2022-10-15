@@ -2,7 +2,7 @@
 
 /**
  * main - output all single number of base 10
- *
+ * prints all possible different combinations of three digits
  * Return: 0 if successful
  */
 
