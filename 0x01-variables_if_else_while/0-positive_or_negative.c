@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /** main - Entry point
- * description:determine if a random number assigned to variable n is positive ornegativ
+ * description: print if number is positive or negative.
  * Return: Alwasy 0 (Success)
  */
 int main(void)
