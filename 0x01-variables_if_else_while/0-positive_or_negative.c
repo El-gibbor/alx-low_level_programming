@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/** main - determine if a random assigned variableis positive or negative
- *
+/** main - Entry point
+ * description:determine if a random number assigned to variable n is positive ornegativ
  * Return: Alwasy 0 (Success)
  */
 int main(void)
