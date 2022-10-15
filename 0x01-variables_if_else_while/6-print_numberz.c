@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  * print all single digit numbers using putchar
- * return: Always 0 (Success)
- */
+ * Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int digit;
