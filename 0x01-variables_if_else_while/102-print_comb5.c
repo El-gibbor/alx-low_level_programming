@@ -3,8 +3,9 @@
 /**
  * main - Entry point
  * ptints all possible combinations of two digit numbers ranging from 0 and 99
- * Return; ALways 0 (Success)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int digit1, digit2;
