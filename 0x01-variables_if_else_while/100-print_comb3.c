@@ -5,29 +5,24 @@
  * print all possiblecombinations of single digit
  * Return: ALways 0 (Success)
  */
-
 int main(void)
 {
-	int var;
+	int digit1, digit2;
 
-	for (var = 0; var < 9; var ++)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		int ii;
-		for (ii = var + 1; ii < 10; ii++)
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			putchar((var % 10) + '0');
-			putchar((ii % 10) + '0');
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
-			if (var != 8)
-			{
-				putchr(',');
-				pitchr(' ');
-			}
-			else
+			if (digit1 == 8 && digit2 == 9)
 				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	puchar('\n');
-
+	putchar('\n');
 	return (0);
 }
