@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main - Entry point
+
+/**
+ * main - Entry point
  * description: print if number is positive or negative.
  * Return: Alwasy 0 (Success)
  */
