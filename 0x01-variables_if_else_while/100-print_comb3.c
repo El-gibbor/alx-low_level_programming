@@ -3,6 +3,7 @@
 /**
  * main - Entry point
  * print all possiblecombinations of single digit
+ * Return: ALways 0 (Success)
  */
 
 int main(void)
