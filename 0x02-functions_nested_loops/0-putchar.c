@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main -  prints putchar
+ * main -  prints _putchar
  * written by Chiagoziem Elgibbor
  * Return: Always 0 (success)
  */
