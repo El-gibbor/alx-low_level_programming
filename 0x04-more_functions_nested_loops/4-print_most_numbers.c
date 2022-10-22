@@ -2,7 +2,7 @@
 
 /**
 *print_most_numbers - prints
-* owned by Bwave ICT
+* By Chiagoziem Elgibbor
 *Return: void
 */
 
