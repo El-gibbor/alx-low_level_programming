@@ -1,7 +1,7 @@
 #!/bin/bash
-# script that creates a static libraries with all the .c source files in the current directory
+# a script that creates a static library liball.a
 
 gcc -c ./*.c
 ar -rc liball.a ./*.o
-ranlib liball.a
+ranlib liball.a *.o
 
