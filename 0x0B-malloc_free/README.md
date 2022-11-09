@@ -1,0 +1,1 @@
+Tasks on C automatic and dynamic allocation, malloc and free. creating functions that allocate, deallocate specific amount of memory from the heap segment of ram, and also memory allocation debugging using valgrind
