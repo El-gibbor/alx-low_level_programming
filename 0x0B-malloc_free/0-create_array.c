@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int index = 0;
 
 	/* allocating memory space to the array elements */
-	pntArray = malloc(size * sizeof(char));
+	pntArray = (char *) malloc(size * sizeof(c));
 
 	while (index < size)
 		pntArray[index] = c;
