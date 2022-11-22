@@ -1,3 +1,0 @@
-#heading1  
-
-**contributors**
