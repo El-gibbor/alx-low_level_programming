@@ -1,1 +1,1 @@
-C language programing on core topics like: compilation process, c variables: if else, while, C functions, nested loops, C debugging, C pointers, arrays and strings, Recursion, static libraries, argc, argu, malloc, free, structures, typdef, preprocessor, fuction pointers, variadic functions, printif, bit manipulation
+tasks on C singly linked list. using our own custom function to add new node to a list,return elements in a linked list,print the element of a list, frees a list
