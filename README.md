@@ -12,7 +12,7 @@
 10 C - preprocessor  
 # 11 printf Project: 
 **Bulding a full functional _printf() function that replicates the C printf() function in the standard library.**  
-This is a colloborative project between Onwuka Ebuka and Chiagoziem Elgibbor.
+This is a collaborative project between Onwuka Ebuka and Chiagoziem Elgibbor.
 
 12 C - function pointers  
 13 C - variadic functions  
