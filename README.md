@@ -14,6 +14,8 @@
 **Bulding a full functional _printf() function that replicates the C printf() function in the standard library.**  
 This is a collaborative project between Onwuka Ebuka and Chiagoziem Elgibbor.
 
-12 C - function pointers  
+12 C - Function pointers  
 13 C - variadic functions  
 14 C - Singly linked list
+15 C - Bit manipulation
+16 C - file I/O
