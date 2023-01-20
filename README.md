@@ -19,3 +19,4 @@ This is a collaborative project between Onwuka Ebuka and Chiagoziem Elgibbor.
 14 C - Singly linked list  
 15 C - Bit manipulation  
 16 C - file I/O  
+17 C - Dynamic libraries
