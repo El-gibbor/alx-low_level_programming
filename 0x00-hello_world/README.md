@@ -9,4 +9,7 @@ This is subsequently passed to the compiler, which produces assembly code for `m
 
 gcc then compiles (or assembles) the source files to convert assembly code to object code. Object code is similar to machine code or binary code. This is the most basic level of programming detail that a programmer can see. We may produce object code with `gcc -c main.c`, which will generate a `main.o` file by default.
 
-The linker is the final step, and it takes our object code and any library programs to create a single executable file. `a.out` is the name of the output executable file.
+The linker is the final step, and it takes our object code and any library programs to create a single executable file. `a.out` is the name of the output executable file.  
+  
+  
+[Here](https://elgibbor.hashnode.dev/what-happens-when-you-type-gcc-mainc-c-compilation-process) is an article i wrote and i discussed the above topic in broader details
