@@ -27,3 +27,27 @@ int main(void)
 
 	return (0);
 }
+
+// int main(void)
+// {
+// 	int one, two, i, next, sumEve;
+
+// 	one = 0, two = 1, sumEve = 0;
+
+// 	printf("%d, %d", one, two);
+
+// 	for (i = 2; i <= 33; i++)
+// 	{
+// 		next = two + one;
+// 		one = two;
+// 		two = next;
+// 		printf(", %d", next);
+// 		if (next % 2 == 0 && next < 4000000)
+// 		{
+// 			sumEve += next;
+// 		}
+// 	}
+// 	printf("\nsum of even nums in fib sequence: %d", sumEve);
+// 	printf("\n");
+// 	return (0);
+// }
