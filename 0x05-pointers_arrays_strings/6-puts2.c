@@ -15,6 +15,8 @@ void puts2(char *str)
 	_putchar('\n');
 }
 
+// Note: This implementation is not completely okay with alx code checker
+
 // void puts2(char *str)
 // {
 // 	int char_val;
