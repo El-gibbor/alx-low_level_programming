@@ -1,9 +1,0 @@
-#include "main.h"
-
-/**
-  _strcpy - copies sring pointed to by src including the terminating null byte (\0)
-  @dest: parameter to check
-  @src: second parameter to check
-Return: char
-/
-
