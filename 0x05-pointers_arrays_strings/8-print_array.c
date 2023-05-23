@@ -7,16 +7,17 @@
  * Return: 0 (Success)
  * Authur: ELGIBBOR
  */
-
 void print_array(int *a, int n)
 {
-	int a_indx;
+	int i, arrayLen;
 
-	for (a_indx = 0; a_indx < n; a_indx++)
+	arrayLen = n;
+
+	for (i = 0; i < arrayLen; i++)
 	{
-		if (a_indx != n - 1)
-		printf("%d, ", a[a_indx]);
-			printf("%d", a[a_indx]);
+		printf("%d", a[i]);
+		if (i != arrayLen - 1)
+			printf(", ");
 	}
 	printf("\n");
 }
