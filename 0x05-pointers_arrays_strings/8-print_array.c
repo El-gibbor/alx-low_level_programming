@@ -5,16 +5,18 @@
  * @a: first parameter to check
  * @n: second parameter to check
  * Return: 0 (Success)
+ * Authur: ELGIBBOR
  */
 
 void print_array(int *a, int n)
 {
-	int x;
+	int a_indx;
 
-	for (x = 0; x < n; x++)
-		if (x != n - 1)
-		printf("%d, ", a[x]);
-		else
-			printf("%d", a[x]);
-printf("\n");
+	for (a_indx = 0; a_indx < n; a_indx++)
+	{
+		if (a_indx != n - 1)
+		printf("%d, ", a[a_indx]);
+			printf("%d", a[a_indx]);
+	}
+	printf("\n");
 }
