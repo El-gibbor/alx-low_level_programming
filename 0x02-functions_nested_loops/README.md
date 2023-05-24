@@ -3,7 +3,7 @@
 This project focuses on deepening ones understanding of C programming, specifically on topics related to functions, nested loops, variable scope, gcc flags, and header files. The objective is to develop ones skills by creating custom functions from scratch, without relying on standard library functions like printf, puts, gets, strlen, strcpy, and others.
 
 ## Learning Objectives  
-I was able to get myself acquainted with the below topics:  
+I was able to get myself acquainted with the below concepts:  
 * __Nested Loops:__ Understood the concept of nested loops and how they can be used to create complex iterations and patterns in C programming.  
 * __Functions:__ Learned about functions in C, their purpose, syntax, and how to use them to organize code into reusable modules.  
 * __Declaration vs. Definition of Functions:__ Differentiate between the declaration and definition of a function, understanding their roles and when to use each.
