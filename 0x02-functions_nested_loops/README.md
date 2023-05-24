@@ -13,4 +13,4 @@ I was able to get myself acquainted with the below concepts:
 * __Header Files:__ Understand the role of header files in C programming, how to create and include them using the #include directive, and their significance in modular code development.  
 ## Feel free to Use  
 The repository contains code examples and exercises that will help anyone grasp the concepts mentioned above. Feel free to explore the code, make modifications, and run it to observe the outcomes. Experimentation and hands-on practice are key to solidify ones understanding.  
-But to my Successors or peers in Alx, please dont verbatimely copy and paste the codes just to pass your checks. That's self-deciet and its downtown dangerous to your career.
+__But to my Successors or peers in Alx, please dont verbatimely copy and paste the codes just to pass your checks. That's self-deciet and its downtown dangerous to your career__.
