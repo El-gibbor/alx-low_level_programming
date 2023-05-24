@@ -1,4 +1,3 @@
-![Else-if-Statement-in-C](https://github.com/softlink2/alx-higher_level_programming/assets/121310192/4c4c9865-73bf-48ed-ba5f-3de07ab74d88)
 # C - Variables, if, else, while  
 Focused on learning the fundamentals of C programming, covering topics such as arithmetic operators, logical operators, relational operators, boolean operators, control flow statements, variable declaration and assignment, printing values, using loops, and understanding the ASCII character set.
 
