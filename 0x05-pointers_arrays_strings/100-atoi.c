@@ -14,9 +14,8 @@ int _atoi(char *s)
 	while (s[charIndx] != '\0')
 	{
 		if (s[charIndx] == '-')
-		{
 			minus_sign *= -1;
-		}
+		
 		while (s[charIndx] >= '0' && s[charIndx] <= '9')
 		{
 			isInt = 1;
@@ -24,9 +23,7 @@ int _atoi(char *s)
 			charIndx++;
 		}
 		if (isInt == 1)
-		{
 			break;
-		}
 		charIndx++;
 	}
 	int_value *= minus_sign;
