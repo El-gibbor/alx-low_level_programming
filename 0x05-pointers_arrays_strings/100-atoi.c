@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
  * _atoi - converts the string to integer
  * @s: parameter to check and convert
  * Return: 0 (success)
@@ -12,8 +13,7 @@
  * @s: parameter to check and convert
  * Return: The integer value of the string
  * Author: ELGIBBOR
- */i
-
+ */
 int _atoi(char *s)
 {
 	int minus_sign = 1, charIndx = 0;
