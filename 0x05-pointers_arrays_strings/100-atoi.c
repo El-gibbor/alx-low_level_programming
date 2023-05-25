@@ -1,19 +1,11 @@
 #include "main.h"
 
 /**
- * _atoi - convert string to integer
- * @s: parameter to check and convert
- * Return: 0 (success)
- */
-#include "main.h"
-
-/**
  * _atoi - converts a given string constant to integer
  * @s: parameter to check and convert
  * Return: The integer value of the string
  * Author: ELGIBBOR
  */
-
 int _atoi(char *s)
 {
 	int minus_sign = 1, charIndx = 0;
