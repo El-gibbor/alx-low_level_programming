@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int isInt = 0, minus_sign = 1, charIndx = 0;
-	unsigned int int_value = 0; /*undsigned handles larger value range*/
+	unsigned int int_value = 0; /*unsigned handles larger value range*/
 
 	while (s[charIndx] != '\0')
 	{
