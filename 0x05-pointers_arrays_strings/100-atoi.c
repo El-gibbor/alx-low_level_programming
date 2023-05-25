@@ -5,36 +5,39 @@
  * @s: parameter to check and convert
  * Return: 0 (success)
  */
+#include "main.h"
+
+/**
+ * _atoi - converts a given string constant to integer
+ * @s: parameter to check and convert
+ * Return: The integer value of the string
+ * Author: ELGIBBOR
+ */
 
 int _atoi(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
+	int minus_sign = 1, charIndx = 0;
+	unsigned int int_value = 0;
 	int isi = 0;
 
-	while (s[c])
+	while (s[charIndx] != '\0')
 	{
-		if (s[c] == 45)
+		if (s[charIndx] == '-')
 		{
-			min *= -1;
+			minus_sign *= -1;
 		}
-
-		while (s[c] >= 48 && s[c] <= 57)
+		while (s[charIndx] >= '0' && s[charIndx] <= '9')
 		{
 			isi = 1;
-			ni = (ni * 10) + (s[c] - '0');
-			c++;
+			int_value = (int_value * 10) + (s[charIndx] - '0');
+			charIndx++;
 		}
-
 		if (isi == 1)
 		{
 			break;
 		}
-
-		c++;
+		charIndx++;
 	}
-
-	ni *= min;
-	return (ni);
+	int_value *= minus_sign;
+	return (int_value);
 }
