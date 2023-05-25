@@ -1,14 +1,6 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
- * _atoi - converts the string to integer
- * @s: parameter to check and convert
- * Return: 0 (success)
- */
-#include "main.h"
-
-/**
  * _atoi - converts a given string to integer
  * @s: parameter to check and convert
  * Return: The integer value of the string
