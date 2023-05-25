@@ -8,9 +8,8 @@
  */
 int _atoi(char *s)
 {
-	int minus_sign = 1, charIndx = 0;
+	int isInt = 0, minus_sign = 1, charIndx = 0;
 	unsigned int int_value = 0;
-	int isi = 0;
 
 	while (s[charIndx] != '\0')
 	{
@@ -20,11 +19,11 @@ int _atoi(char *s)
 		}
 		while (s[charIndx] >= '0' && s[charIndx] <= '9')
 		{
-			isi = 1;
+			isInt = 1;
 			int_value = (int_value * 10) + (s[charIndx] - '0');
 			charIndx++;
 		}
-		if (isi == 1)
+		if (isInt == 1)
 		{
 			break;
 		}
