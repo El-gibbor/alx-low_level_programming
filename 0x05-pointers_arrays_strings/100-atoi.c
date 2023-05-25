@@ -15,7 +15,7 @@ int _atoi(char *s)
 	{
 		if (s[charIndx] == '-')
 			minus_sign *= -1;
-		
+
 		while (s[charIndx] >= '0' && s[charIndx] <= '9')
 		{
 			isInt = 1;
