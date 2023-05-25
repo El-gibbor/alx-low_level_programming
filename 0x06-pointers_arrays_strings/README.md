@@ -1,6 +1,6 @@
 ![pointer-to-pointer](https://github.com/El-gibbor/alx-low_level_programming/assets/107848793/7f190b39-c4aa-44b9-91b1-be059ce1af16)
 # More Pointers, Arrays and Strings in C  
-Now we advanced more into the precedent [project](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) and implementing the previous various concepts in C programming, which includes but not limited to pointers, arrays, strings, and variable scope in a more exciting and advanced level. Creating more functions from scratch. such as:
+Now we advanced more into the precedent [project](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) implementing the previous various concepts in C programming, which includes but not limited to pointers, arrays, strings, and variable scope in a more exciting and advanced level. Creating more functions from scratch. such as:
 * `int _strcmp(char *s1, char *s2)` a function that compares two strings. works exactly like `strcmp`  
 * `char *_strcat(char *dest, char *src)` a function that concatenates two strings.  
 *  `char *_strncat(char *dest, char *src, int n)` similar to similar to the above `_strcat` function, except that it will use at most `n` bytes from `src`; and src does not need to be null-terminated if it contains `n` or more bytes.  
