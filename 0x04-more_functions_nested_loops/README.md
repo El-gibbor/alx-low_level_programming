@@ -1,3 +1,4 @@
+![Functions-in-C](https://github.com/El-gibbor/alx-low_level_programming/assets/121310192/077d7e56-0037-4eab-8522-f97575dd6112)
 # More nested loops and functions in C  
 A further and deeper delve into the concepts of C nested loops, Functions, variable scopes, header files. Now advanced to create more intresting functions from scratch without the use of any standar library.  
 ## Functions like:  
