@@ -7,8 +7,8 @@
  * @src: source of string to be concatinated
  * @dest: destination of where the str is to be concatinated
  * @n: The length of char to be concatinated
- *
  * Return: a pointer to the resulting string dest
+ * Author: ELGIBBOR
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -16,6 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (; dest[indx_d] != '\0'; indx_d++)
 		;
+	
 	for (; src[indx_s] != '\0' && indx_s < n; indx_s++)
 	{
 		dest[indx_d] = src[indx_s];
