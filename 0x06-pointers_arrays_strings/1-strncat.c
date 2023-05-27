@@ -1,9 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strncat - concatenates two strings
- *
  * @src: source of string to be concatinated
  * @dest: destination of where the str is to be concatinated
  * @n: The length of char to be concatinated
