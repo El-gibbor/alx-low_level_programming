@@ -2,9 +2,9 @@
 
 /**
  * _strcpy - copies the string pointed to by src to dest
- * @dest: first parameter to check and copy
- * @src: second parameter to check and copy
- * Return: character
+ * @dest: destination of the copied string
+ * @src: source of the string to be copied to <dest>
+ * Return: pointer to the updated string after copying (dest)
  */
 
 char *_strcpy(char *dest, char *src)
