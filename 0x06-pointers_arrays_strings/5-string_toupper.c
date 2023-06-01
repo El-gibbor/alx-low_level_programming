@@ -3,6 +3,7 @@
  * string_toupper - converts lowercase str to uppercase
  * @s: string to be converted
  * Return: char pointer to the converted string
+ * Author: ELGIBBOR
  */
 char *string_toupper(char *s)
 {
