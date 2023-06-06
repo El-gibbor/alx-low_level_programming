@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include "main.h"
 
 /**
@@ -8,7 +7,6 @@
  *
  * Return: pointer to the located character or null if not found
  */
-
 char *_strchr(char *s, char c)
 {
 	int indx;
@@ -18,5 +16,4 @@ char *_strchr(char *s, char c)
 		if (s[indx] == c)
 			return (&(s[indx]));
 	}
-	return (NULL);
 }
