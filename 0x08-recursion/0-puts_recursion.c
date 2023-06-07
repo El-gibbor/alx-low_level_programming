@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion -  prints a string, followed by a new line.
- * @s: String to print
+ * @s: String to be printed
  * Return: a call to itself (recursive)
  * Author: ELGIBBOR
  */
