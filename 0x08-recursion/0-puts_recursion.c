@@ -3,7 +3,7 @@
 /**
  * _puts_recursion -  prints a string, followed by a new line.
  * @s: String to be printed
- * Return: a call to itself (recursive)
+ * Return: void
  * Author: ELGIBBOR
  */
 void _puts_recursion(char *s)
