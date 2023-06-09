@@ -22,6 +22,8 @@ To create a static library, follow these general steps:
     * `gcc -c elgibbor.c` For multiple files, you can use this command `gcc -c *.c` to compile all of them at once. but ensure it is only the C files you intend to compile that are in your current directory because this commands compiles every file with `.c` extention in that directory.<br>
 ##### Use the `ar` command to create an archive file from the object files:  
 `ar rcs myLibrary.a elgibbor.o elgibbor.o`. To create an archive for multiple object files, use this command `ar rcs myLibrary.a *.o`
-  
-_Thats it! a static library is created._  
-
+_Thats it! a static library is created  
+## Using a Static Library
+To use a static library, you have to include the library's header file(s) in your source code. This header file will contain the prototype or macro definitions of all the archived function object files. then you can do the below:   
+During the compilation, link the static library using the `-l` flag:  
+`gcc main.c -o main -L. -mibrary`
