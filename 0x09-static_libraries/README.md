@@ -19,7 +19,7 @@ A static library, also known as an archive, is a collection of pre-compiled obje
 To create a static library, follow these general steps:  
 1. Write the desired functionality in separate C source files.  
 2. Compile each source file into an object file using the gcc compiler:   
-    * `gcc -c elgibbor.c -o elgibbor.o` For multiple files, you can use this command `gcc -c *.c` to compile all of them at once. but ensure it is only the C files you intend to compile that are in your current directory because this commands compiles every file with `.c` extention in that directory.<br>
+    * `gcc -c elgibbor.c` For multiple files, you can use this command `gcc -c *.c` to compile all of them at once. but ensure it is only the C files you intend to compile that are in your current directory because this commands compiles every file with `.c` extention in that directory.<br>
 ##### Use the `ar` command to create an archive file from the object files:  
 `ar rcs myLibrary.a elgibbor.o elgibbor.o`. To create an archive for multiple object files, use this command `ar rcs myLibrary.a *.o`  
 _Thats it! a static library is created._  
