@@ -19,17 +19,20 @@ int main(int argc, char *argv[])
 	{
 		for (indx = 1; indx < argc; indx++)
 		{
-			for (v_indx = 0; argv[indx][v_indx]; v_indx++)
+			v_indx = 0;
+			while (argv[indx][v_indx])
 			{
-				if (!(isdigit(argv[indx][v_indx])))
+				if (!isdigit(argv[indx][v_indx]))
 				{
 					printf("Error\n");
 					return (1);
 				}
-				sumOfArgs += atoi(argv[indx]);
+				v_indx++;
 			}
+			sumOfArgs += atoi(argv[indx]);
 		}
 		printf("%d\n", sumOfArgs);
 	}
 	return (0);
 }
+
