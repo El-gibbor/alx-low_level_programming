@@ -5,7 +5,7 @@
  * main - multiplies two numbers (cmdline args)
  * @argc: argument count
  * @argv: list of cmdline arguments to be multiplied
- * Return: 1 if 2 arguments is not give
+ * Return: 1 if 2 arguments were not given.
  */
 int main(int argc, char *argv[])
 {
