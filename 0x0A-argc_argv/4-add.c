@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - prints the sum of cmdline args
  * @argc: argument count
@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int indx, sumOfArgs = 0;
+	int v_indx, indx, sumOfArgs = 0;
 
 	if (argc < 2)
 	{
@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
 	{
 		for (indx = 1; indx < argc; indx++)
 		{
-			if (*argv[indx] >= '0' && *argv[indx] <= '9')
+			for (v_indx = 0; argv[indx][v_indx]; v_indx++)
 			{
+				if (!(isdigit(argv[indx][v_indx])))
+				{
+					printf("Error\n");
+					return (1);
+				}
 				sumOfArgs += atoi(argv[indx]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
 			}
 		}
 		printf("%d\n", sumOfArgs);
