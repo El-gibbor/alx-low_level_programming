@@ -23,6 +23,9 @@ char *_strdup(char *str)
 
 	/* hold base address with return ptr & perform duplicate with another ptr */
 	ptr_alloc_char = ptr_alloc;
+	if (!ptr_alloc)
+		return (NULL);
+
 	while (*str)
 	{
 		*ptr_alloc_char = *str;
