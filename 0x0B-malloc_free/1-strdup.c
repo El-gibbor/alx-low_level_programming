@@ -14,17 +14,18 @@ char *_strdup(char *str)
 	/* int len = _strlen(str); */
 	size_t len;
 
+	if (!str)
+		return (NULL);
+
 	for (len = 0; str[len]; len++)
 		;
 
 	ptr_alloc = malloc(sizeof(char) * len + 1);
-	if (str == NULL)
+	if (!ptr_alloc)
 		return (NULL);
 
 	/* hold base address with return ptr & perform duplicate with another ptr */
 	ptr_alloc_char = ptr_alloc;
-	if (!ptr_alloc)
-		return (NULL);
 
 	while (*str)
 	{
