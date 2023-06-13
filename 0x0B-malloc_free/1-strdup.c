@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	ptr_alloc = malloc(sizeof(char) * strLen + 1);
 	if (str != NULL)
-	{
+		return (NULL);
 	/* hold base address with return ptr & perform duplicate with another ptr */
 		ptr_alloc_char = ptr_alloc;
 		while (*str)
@@ -30,6 +30,4 @@ char *_strdup(char *str)
 		}
 		*ptr_alloc_char = '\0';
 		return (ptr_alloc);
-	}
-	return (NULL);
 }
