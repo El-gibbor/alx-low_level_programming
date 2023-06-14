@@ -49,5 +49,3 @@ int main(void)
     free(buffer);
     return (0);
 }
-
-// gcc testFiles/1-main.c -L. -lmy
