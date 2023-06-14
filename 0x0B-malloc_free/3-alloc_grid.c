@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 	if (!ptr2D)
 	{
 		free(ptr2D);
-		/* return (NULL); */
+		return (NULL);
 	}
 	for (row = 0; row < height; row++)
 	{
@@ -28,6 +28,7 @@ int **alloc_grid(int width, int height)
 		if (!ptr2D[row])
 		{
 			free(ptr2D[row]);
+			return(NULL);
 		}
 	}
 	for (rowIndx = 0; rowIndx < height; rowIndx++)
