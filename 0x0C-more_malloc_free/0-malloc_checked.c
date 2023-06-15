@@ -8,7 +8,7 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr_alloc;
+	int *ptr_alloc;
 
 	ptr_alloc = malloc(b * sizeof(int));
 	if (!ptr_alloc)
