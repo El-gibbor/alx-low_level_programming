@@ -15,8 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str_alloc;
 	char *charInStr;
 
-	if (!s1 || !s2)
-		return ("");
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 
 	if (n_byte < 0)
 		return (NULL);
