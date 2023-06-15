@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 #include "myStrlen.c"
+#include "myStrnCat.c"
+#include "myStrCat.c"
 
 /**
  * string_nconcat - concatenates two strings.
@@ -11,9 +13,8 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int n_byte = n, total_str, s2_str, strIndx;
+	int n_byte = n, total_str;
 	char *str_alloc;
-	char *charInStr;
 
 	/* Handle parameters as empty string when they are NULL*/
 	if (!s1)
@@ -24,30 +25,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n_byte < 0)
 		return (NULL);
 
-	/* get total length of the expected strings for concatination */
 	if (n_byte >= myStrlen(s2))
 		total_str = myStrlen(s1) + myStrlen(s2);
 	else
 		total_str = myStrlen(s1) + n_byte;
 
-	/* allocate memory for concatination and handle malloc failure */
 	str_alloc = malloc(total_str + 1);
 	if (!str_alloc)
 		return (NULL);
 
-	/*hold base address with return ptr & perform concatination with another ptr*/
-	charInStr = str_alloc;
-	for (strIndx = 0; s1[strIndx] != '\0'; strIndx++)
-	{
-		*charInStr = s1[strIndx];
-		charInStr++;
-	}
-	/* concatinate n byte of str2 into the allocated memory*/
-	for (s2_str = 0; s2[s2_str] != '\0' && s2_str < n_byte; s2_str++)
-	{
-		*charInStr = s2[s2_str];
-		charInStr++;
-	}
-	*charInStr = '\0';
+	*str_alloc = '\0';
+
+	myStrCat(str_alloc, s1);
+	myStrnCat(str_alloc, s2, 6);
+
 	return (str_alloc);
 }
