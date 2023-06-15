@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
-#include "myStrlen.c"
-#include "myStrnCat.c"
-#include "myStrCat.c"
-#include <stdio.h>
+#include "funcFiles/myStrlen.c"
+#include "funcFiles/myStrnCat.c"
+#include "funcFiles/myStrCat.c"
 
 /**
  * string_nconcat - concatenates two strings.
@@ -22,7 +21,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-
 	if (n_byte < 0)
 		return (NULL);
 
@@ -38,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	*str_alloc = '\0';
 
 	myStrCat(str_alloc, s1);
-	myStrnCat(str_alloc, s2, n);
+	myStrnCat(str_alloc, s2, n_byte);
 
 	return (str_alloc);
 }
