@@ -3,6 +3,7 @@
 #include "myStrlen.c"
 #include "myStrnCat.c"
 #include "myStrCat.c"
+#include <stdio.h>
 
 /**
  * string_nconcat - concatenates two strings.
@@ -37,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	*str_alloc = '\0';
 
 	myStrCat(str_alloc, s1);
-	myStrnCat(str_alloc, s2, 6);
+	myStrnCat(str_alloc, s2, n);
 
 	return (str_alloc);
 }
