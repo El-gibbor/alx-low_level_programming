@@ -29,13 +29,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		total_str = myStrlen(s1) + myStrlen(s2);
 	else
 		total_str = myStrlen(s1) + n_byte;
-	
+
 	/* allocate memory for concatination and handle malloc failure */
 	str_alloc = malloc(total_str + 1);
 	if (!str_alloc)
 		return (NULL);
-	
-	/* hold base address with return ptr & perform concatination with another ptr */
+
+	/*hold base address with return ptr & perform concatination with another ptr*/
 	charInStr = str_alloc;
 	for (strIndx = 0; s1[strIndx] != '\0'; strIndx++)
 	{
