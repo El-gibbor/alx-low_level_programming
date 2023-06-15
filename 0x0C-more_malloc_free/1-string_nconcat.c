@@ -20,7 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s2)
 		s2 = "";
 
-	if (n_byte < 0) return (NULL);
+	if (n_byte < 0)
+		return (NULL);
 
 	if (n_byte >= myStrlen(s2))
 		total_str = myStrlen(s1) + myStrlen(s2);
