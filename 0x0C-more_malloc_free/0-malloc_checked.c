@@ -9,6 +9,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void *ptr_alloc = malloc(b);
+
 	if (!ptr_alloc)
 		exit(98);
 
