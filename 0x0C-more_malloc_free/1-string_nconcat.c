@@ -3,7 +3,7 @@
 #include "myStrlen.c"
 
 /**
- * string_nconcat - concatenates two strings
+ * string_nconcat - concatenates two strings.
  * @s1: string to be concatinated into a newly allocated space in memory
  * @s2: concatinates n number of bytes from this string to the one from s1
  * @n: number of bytes be taken from s2 and concatinate to s1
