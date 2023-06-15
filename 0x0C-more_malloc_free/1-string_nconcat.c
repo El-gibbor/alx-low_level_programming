@@ -4,7 +4,7 @@
 
 /**
  * string_nconcat - concatenates two strings.
- * @s1: string to be concatinated into a newly allocated space in memory
+ * @s1: string to be concatinated into a newly allocated space in memory.
  * @s2: concatinates n number of bytes from this string to the one from s1
  * @n: number of bytes be taken from s2 and concatinate to s1
  * Return: pointer to the allocated space in memory containing what is above
@@ -20,8 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s2)
 		s2 = "";
 
-	if (n_byte < 0)
-		return (NULL);
+	if (n_byte < 0) return (NULL);
 
 	if (n_byte >= myStrlen(s2))
 		total_str = myStrlen(s1) + myStrlen(s2);
