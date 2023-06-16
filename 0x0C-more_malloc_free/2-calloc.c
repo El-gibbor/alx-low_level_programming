@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include "funcFiles/myMemSet.c"
+#include <string.h>
 
 /**
  * _calloc - allocates memory to an array
@@ -19,6 +20,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     if (!arr_alloc)
         return (NULL);
 
-    myMemSet(arr_alloc, '0', size);
+    memset(arr_alloc, '0', size);
     return (arr_alloc);
 }
