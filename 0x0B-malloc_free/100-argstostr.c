@@ -24,7 +24,7 @@ int _strlen(char *a)
 char *argstostr(int ac, char **av)
 {
 	int i, j, k = 0, strLen;
-		char *cmdarg;
+	char *cmdarg;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -36,6 +36,7 @@ char *argstostr(int ac, char **av)
 	cmdarg = malloc(strLen + ac + 1);
 		if (!cmdarg)
 			return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
