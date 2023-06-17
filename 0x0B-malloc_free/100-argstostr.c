@@ -1,19 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
-/**
- * _strlen - get the string length
- * @a: the given string
- * Return: lenghth of the string
- */
-int _strlen(char *a)
-{
-	int len = 0;
-
-	for (; a[len] != '\0'; len++)
-		;
-	return (len);
-}
+#include "myStrLen.c"
 
 /**
  * argstostr - cocatinates all arguments of a prog
@@ -31,9 +18,9 @@ char *argstostr(int ac, char **av)
 
 	for (; i < ac; i++)
 	{
-		strLen += _strlen(av[i]);
+		strLen += myStrLen(av[i]);
 	}
-	cmdarg = malloc((strLen + ac + 1) * sizeof(char));
+	cmdarg = malloc(strLen + ac + 1);
 		if (!cmdarg)
 			return (NULL);
 
