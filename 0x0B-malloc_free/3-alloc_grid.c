@@ -26,6 +26,15 @@ int **alloc_grid(int width, int height)
 	for (row = 0; row < height; row++)
 		ptr2D[row] = malloc(sizeof(int) * width);
 	
+		/* Free all memories if malloc fails*/
+		if (ptr2D[row] == NULL)
+		{
+			for (; row >= 0; row--)
+				free(ptr2D[row]);
+
+			free(ptr2D);
+			return (NULL);
+		}
 	/* elements of grid (2D array) initialised to 0 */
 	for (rowIndx = 0; rowIndx < height; rowIndx++)
 	{
