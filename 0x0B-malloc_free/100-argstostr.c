@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include "myStrLen.c"
+#include <stdio.h>
 
 /**
  * argstostr - cocatinates all arguments of a prog
@@ -17,9 +18,8 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	for (; i < ac; i++)
-	{
 		strLen += myStrLen(av[i]);
-	}
+
 	cmdarg = malloc(strLen + ac + 1);
 		if (!cmdarg)
 			return (NULL);
