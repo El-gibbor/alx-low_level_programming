@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
 #include "myStrLen.c"
-#include <stdio.h>
 
 /**
  * argstostr - cocatinates all arguments of a prog
