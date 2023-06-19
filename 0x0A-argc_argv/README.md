@@ -1,4 +1,4 @@
-![Command-Line-Arguments-in-C](https://github.com/softlink2/alx-low_level_programming/assets/121310192/9e938dd3-bbf7-4d14-94e1-ed81cb32d2f9)
+![WhatsApp Image 2023-06-19 at 19 25 52](https://github.com/ehoneahobed/alx-low_level_programming/assets/121310192/2311ee9b-05d5-4314-a548-20ffd386d6a5)
 # C - argc, argv
 This project provides an overview of how to use command-line arguments in C programs. It covers the `argc` and `argv` parameters of the main function, which allow you to pass arguments to your program when executing it from the command line.  
 ## Command-Line Arguments  
