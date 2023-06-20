@@ -4,7 +4,7 @@
 #include "funcFiles/myStrcpy.c"
 
 /**
- * new_dog - function that creates a new dog (struct object)
+ * new_dog - function that creates a new dog (struct template)
  * @name: name of the dog (string literal(instance of struct))
  * @age: age of the dog (float(struct instance))
  * @owner: name of the dog owner (string literal(struct object))
@@ -32,5 +32,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	(*ptrDog).age = age;
+	myStrcpy((*ptrDog).name, name);
+	myStrcpy((*ptrDog).owner, owner);
 	return (ptrDog);
 }
