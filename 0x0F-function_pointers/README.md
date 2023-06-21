@@ -12,8 +12,7 @@ A function pointer holds the memory address of a function. It stores the locatio
 In C, all functions have a fixed memory layout, which allows function pointers to accurately point to the correct function. The function pointer knows the size and layout of the function's parameters and return type, enabling it to correctly invoke the function and handle the stack frame.  
 ## Where Does a Function Pointer Point to in the Virtual Memory?  
 A function pointer points to the starting address of the function's machine code in the virtual memory. In most modern computer architectures, including the x86 and x86-64 architectures, functions are typically stored in the code segment of the program's virtual memory.
-The code segment is a region of memory reserved for executable instructions. When the program is loaded into memory, the code segment contains the compiled machine code of the program, including all the functions defined within it. Each function is assigned a specific memory address, and the function pointer holds the address of the desired function.  
-Remember to exercise caution when working with function pointers to ensure they point to valid functions and handle potential null pointers or uninitialized function pointers appropriately.  
+The code segment is a region of memory reserved for executable instructions. When the program is loaded into memory, the code segment contains the compiled machine code of the program, including all the functions defined within it. Each function is assigned a specific memory address, and the function pointer holds the address of the desired function.    
 ## Resources  
 [Function pointers in C/C++](https://www.youtube.com/watch?v=ynYtgGUNelE) - Mycodeschool (video)  
 [Everything you need to know about pointers in c](https://boredzo.org/pointers/)  
