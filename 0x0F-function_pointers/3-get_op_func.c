@@ -19,8 +19,9 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (*s == ops[i].op) /*if entered char is equal to a a valid operator*/
+		if (*s == *ops[i].op) /*if entered char is equal to a a valid operator*/
 			return (ops[i].f); /*return corresponding func ptr to that operator*/
+		i++;
 	}
 	return (NULL); /*NULL if s doesn't match the available 5 operators*/
 }
