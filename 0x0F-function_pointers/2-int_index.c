@@ -17,9 +17,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; i++)
 		{
+			/*if the comparison below doesn't evaluate to 0 (1 is true, 0 is false*/
 			if (cmp(array[i]))
 				return (i);
 		}
 	}
-	return (-1); /*if above codition wasnt met (no matching element)*/
+	return (-1); /*if the above condition wasnt met (no matching element)*/
 }
