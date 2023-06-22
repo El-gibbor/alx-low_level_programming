@@ -22,5 +22,6 @@ typedef struct op
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #endif
