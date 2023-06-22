@@ -16,8 +16,10 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	/**
- 	 * from 3-get_op_func.c, Null is returned/passed to this func as an arg when
-   the selected character (operator)  is not valid, so we check for when the argument to this func is NUll which evaluates to an invalid selection of operator*/
+	 * in 3-get_op_func.c, Null is returned/passed to this func as an arg when the
+	 * selected character (operator)  is not valid, so we check for when the arg
+	 * to this func is NUll and print an error message.
+	 */
 	if (!get_op_func(argv[2]))
 	{
 		printf("Error\n");
