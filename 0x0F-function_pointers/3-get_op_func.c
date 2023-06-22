@@ -13,7 +13,7 @@ int (*get_op_func(char *s))(int, int)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL} /*sentinal value to terminate an array*/
+		{NULL, NULL} /*sentinal value to terminate an array/indicating the end*/
 	};
 	int i = 0;
 
