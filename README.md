@@ -1,3 +1,5 @@
 ![Screenshot 2023-04-21 150303](https://user-images.githubusercontent.com/107848793/233621598-d99b0bc7-4d85-4c39-ad33-2ac9a3cfe01d.png)  
 # C Low-Level Programming  
 Welcome to my C Low-Level Programming repository! This repository serves as a collection of projects and exercises for all [Alx](https://www.alxafrica.com/) Software Engineering trainees, focused on low-level programming concepts using the C language. This track is designed to provide a solid foundation in understanding the inner workings of your programs, memory management, and a deeper understanding of the intricacies of computer systems.
+### To my Peers and Successors:  
+⚠️Please don't verbatimely copy and paste the codes in this repository just to pass your checks. That's self-deceit. you are denying yourself the opportunity to learn, and it's downtown dangerous to your career. Nobody hires you because you are the best student or because your code passed all the checkers. Try to learn the concepts and seek help if you are stuck trying to implement what you've learned. I'm [available](chiagoziem11@yahoo.com) to help!
