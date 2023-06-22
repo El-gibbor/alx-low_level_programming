@@ -13,11 +13,11 @@ int (*get_op_func(char *s))(int, int)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL}
+		{NULL, NULL} /*sentinal value to terminate an array*/
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (i < 5)
 	{
 		if (*s == ops[i].op) /*if entered char is equal to a a valid operator*/
 			return (ops[i].f);/*return corresponding func ptr to that operator*/
