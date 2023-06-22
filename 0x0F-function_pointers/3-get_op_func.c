@@ -19,9 +19,15 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (!strcmp(ops[i].op, s)) /*if entered char is equal to a a valid operator*/
-			return (ops[i].f); /*return corresponding func ptr to that operator*/
+		 /**
+		  * if entered char is equal to a a valid operator, then
+		  * return the func ptr pointing to the func that corresponds to
+		  * the input character (operator).
+		  */
+		if (!strcmp(ops[i].op, s))
+			return (ops[i].f);
 		i++;
 	}
-	return (NULL); /*NULL if s doesn't match the available 5 operators*/
+	/*NULL if s (input char) doesn't match the available 5 operators*/
+	return (NULL);
 }
