@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdio.h>
 /**
  * print_numbers - func that prints numbers
  * @separator: string to be printed between numbers
@@ -17,8 +17,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		print_nums = va_arg(numList, int);
-		printf("%d%s", print_nums, separator);
+		printf("%d", va_arg(numList, int));
+		if (i < n - 1)
+			printf("%s", separator);
 	}
+	va_end(numList);
 	printf("\n");
 }
