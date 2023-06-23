@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(strList, n);
 	for (i = 0; i < n; i++)
 	{
-		/*assign each variadic str arg to a ptr*/
+		/*assign each variadic str argument to a ptr*/
 		char *argStr = va_arg(strList, char *);
 
 		if (argStr) /* "(nil)" if one of the string is NULL*/
