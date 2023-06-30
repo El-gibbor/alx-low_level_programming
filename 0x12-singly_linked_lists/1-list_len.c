@@ -7,10 +7,12 @@
 */
 size_t list_len(const list_t *h)
 {
-    size_t i = 0;
-    
-    for (; h; i++)
-       h = (*h).next;
+	size_t numNodes = 0;
 
-    return (i);
+	while (h)
+	{
+		h = (*h).next;
+		numNodes++;
+	}
+	return (numNodes);
 }
