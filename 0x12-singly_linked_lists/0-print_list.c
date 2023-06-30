@@ -9,7 +9,7 @@ size_t print_list(const list_t *h)
 {
 	size_t i = 0;
 
-	for (; h; i++);
+	for (; h; i++)
 	{
 		if (h->str == NULL)
 			printf("[%d] %s\n", 0, "(nill)");
