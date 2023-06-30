@@ -9,7 +9,7 @@
 	{
 		size_t i;
 
-		for (i = 0; h; i++)
+		for (i = 0; h != NULL; i++)
 		{
 			if (!(*h).str)
 				printf("[%d] %s\n", 0, "(nil)");
