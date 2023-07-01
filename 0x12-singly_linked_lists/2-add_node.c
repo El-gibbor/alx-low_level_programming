@@ -20,17 +20,3 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_node;
 	return (new_node);
 }
-
-/**
- * _strlen - returns the lenth of a string
- * @s: Paremeter to count
- * Return: length.
- */
-int _strlen(const char *s)
-{
-	int len = 0;
-
-	for (; s[len]; len++)
-		;
-	return (len);
-}
