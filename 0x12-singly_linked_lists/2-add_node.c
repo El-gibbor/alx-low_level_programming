@@ -1,6 +1,20 @@
 #include "lists.h"
 
 /**
+ * _strlen - returns the lenth of a string
+ * @s: Paremeter to count
+ * Return: length.
+ */
+int _strlen(const char *s)
+{
+	int len = 0;
+
+	for (; s[len]; len++)
+		;
+	return (len);
+}
+
+/**
  * add_node - adds a new node at the beginning of a list_t list
  * @head: pointer to the address of the first node
  * @str: string to be added(duplicated) to the list
