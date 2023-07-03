@@ -1,6 +1,20 @@
 #include "lists.h"
 
 /**
+ * _strlen - returns the lenth of a string
+ * @s: Paremeter to count
+ * Return: length.
+ */
+int _strlen(const char *s)
+{
+	int len = 0;
+
+	for (; s[len]; len++)
+		;
+	return (len);
+}
+
+/**
  * add_node_end - adds a new node at the end of a l_list
  * @head: pointer to a pointer to the first node in the list
  * @str: member of the struct node (data field)
