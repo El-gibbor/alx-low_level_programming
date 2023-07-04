@@ -18,5 +18,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		indxCount++;
 		curr_node = curr_node->next;
 	}
-	return (NULL);
+	return (NULL); /*if node doesnt exit*/
 }
