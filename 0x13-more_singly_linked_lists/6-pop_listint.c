@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	pop_node = *head;
-	data = pop_node->n; /*grab the data member of the node to be deleted*/
+	data = pop_node->n; /*grab the data of the node to be deleted*/
 	*head = pop_node->next;
 	free(pop_node);
 	return (data);
