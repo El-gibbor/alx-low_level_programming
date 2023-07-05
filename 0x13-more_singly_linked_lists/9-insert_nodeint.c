@@ -30,8 +30,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		curr_node = curr_node->next;
 		idx--;
 	}
+	/* if curr_node gets to NULL before the given idx, means idx is out of bound*/
 	if (!curr_node)
-		return (NULL);/*curr_node gets to NULL confirms idx is out of bound*/
+		return (NULL);
 	new_node->next = curr_node->next;
 	curr_node->next = new_node;
 	return (new_node);
