@@ -31,7 +31,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		idx--;
 	}
 	/*curr_node gets to NULL before the given idx, means idx is out of bound*/
-	if (!curr_node)
+	if (!curr_node)/*u can aswell free(new_node) before returning Null. insertion isn't possible*/
 		return (NULL);
 	new_node->next = curr_node->next;
 	curr_node->next = new_node;
