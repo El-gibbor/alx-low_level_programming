@@ -27,7 +27,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			del_curr = del_curr->next;
 			index--;
 		}
-		if (!del_curr)
+		if (!del_curr) /* index out of bound */
 			return (-1);
 		prev->next = del_curr->next;
 		free(del_curr);
