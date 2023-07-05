@@ -19,18 +19,15 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(del_curr);
 		return (1);
 	}
-	else
+	while (index > 0 && del_curr)
 	{
-		while (index > 0 && del_curr)
-		{
-			prev = del_curr;
-			del_curr = del_curr->next;
-			index--;
-		}
-		if (!del_curr) /* index out of bound */
-			return (-1);
-		prev->next = del_curr->next;
-		free(del_curr);
-		return (1);
+		prev = del_curr;
+		del_curr = del_curr->next;
+		index--;
 	}
+	if (!del_curr) /* index out of bound */
+		return (-1);
+	prev->next = del_curr->next;
+	free(del_curr);
+	return (1);
 }
