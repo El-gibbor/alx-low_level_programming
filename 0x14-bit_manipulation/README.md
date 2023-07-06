@@ -14,7 +14,7 @@ The bitwise AND operator `&` compares the corresponding bits of two operands. Th
 ```
    0100 // binary representation of 4
  & 0111 // binary representation of 7
------------
+--------
    0100 // result => 4 & 7 = 4 (Binary: 0100)
 ```
 #### Bitwise OR `|`  
@@ -22,7 +22,7 @@ The bitwise OR operator `|` Compares corresponding bits of the operands and retu
 ```
    0001 // decimal: 1
 OR 0010 // decimal: 2
------------
+--------
    0011 // result => 1 | 2 = 3 (Binary: 0011)
 ```  
 #### Bitwise XOR `^`  
@@ -30,12 +30,12 @@ The bitwise XOR operator `^` performs a bitwise OR operation on each correspondi
 ```
    0101 // decimal: 5
  ^ 0011 //decimal: 3
------------
+--------
    0110 // result => 5 ^ 3 = 6 (Binary: 0110)
 ```
 #### Bitwise NOT `~`  
 It is a unary operator that compliments each bit one by one. It flips the bits of its operand. Each 0 is converted to 1, and each 1 is converted to 0. ⤵️  
 ```
 ~0111 // decimal: 7
------------
-  1000 // result => ~7 = 8 (Binary: 1000)
+------
+1000 // result => ~7 = 8 (Binary: 1000)
