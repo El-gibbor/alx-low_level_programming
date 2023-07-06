@@ -41,5 +41,5 @@ It is a unary operator that compliments each bit one by one. It flips the bits o
   1000 // result => ~ 7 = 8 (Binary: 1000)
 ```
 ### Bitwise left `<<` and right `>>` shift  
-Syntax: `value << n` The left shift operator shifts the bits of the value to the left by `n` positions and fills the vacant (trailing) bit positions on the right with zeros. left shifting is equivalent to the left operand `value` multiplied by 2 raised to the power of the right operand (`n` position). 
-Syntax: `value >> n` The right shift operator shifts the bits of the value to the right by `n` positions. It fills the vacant (leading) bit positions on the left with zeros. This shift is equivalent to the left operand `value` divided by 2 raised to the power of the right operand (`n` position).
+__Bitwise left Shift `<<`__ - Syntax: `value << n` The left shift operator shifts the bits of the value to the left by `n` positions and fills the vacant (trailing) bit positions on the right with zeros. left shifting is equivalent to the left operand `value` multiplied by 2 raised to the power of the right operand (`n` position).  
+__Bitwise right Shift `>>`__ - Syntax: `value >> n` The right shift operator shifts the bits of the value to the right by `n` positions. It fills the vacant (leading) bit positions on the left with zeros. This shift is equivalent to the left operand `value` divided by 2 raised to the power of the right operand (`n` position).  
