@@ -10,26 +10,26 @@ C provides bitwise operators that enable the manipulation of individual bits wit
 * __Bitwise Shift Left `<<`__: Shifts the bits of a value to the left by a specified number of positions.
 * __Bitwise Shift Right `>>`__: Shifts the bits of a value to the right by a specified number of positions.  
 #### Bitwise AND `&`
-The bitwise AND operator `&` compares the corresponding bits of two operands and produces a result where each bit is set if both corresponding bits are set. Otherwise, the bit is cleared. ⤵️ 
+The bitwise AND operator `&` compares the corresponding bits of two operands. The resulting bit is set to 1 only if both bits are 1; otherwise, it is set to 0.. ⤵️ 
 ```
-unsigned int a = 5;      // 0101 in binary
-unsigned int b = 3;      // 0011 in binary
-unsigned int result = a & b;   // 0001 in binary
+   0100 // binary representation of 4
+ & 0111 // binary representation of 7
+-----------
+   0100 // result => 4 & 7 = 4 (Binary: 0100)
 ```
-In the above example, the result is 1 because AND is 1 when both bits are 1 and the binary representation of `a` and `b` has only the rightmost bit set.
-
 #### Bitwise OR `|`  
-The bitwise OR operator `|` compares the corresponding bits of two operands and produces a result where each bit is set if at least one of the corresponding bits is set. ⤵️ 
+The bitwise OR operator `|` Compares corresponding bits of the operands and returns a new value where each bit position is set to 1 if either the corresponding bit in the first number or the second number is 1. Otherwise, if both bits are 0, the result will also have 0 at that position. ⤵️ 
 ```
-unsigned int a = 5;      // 0101 in binary
-unsigned int b = 3;      // 0011 in binary
-unsigned int result = a | b;   // 0111 in binary
-```
-From the above example, the result is 7 because the binary representation of `a` and `b` has bits 0, 1, and 2 set.  
+   0001 // binary representation of 1
+OR 0010 // binary representation of 2
+-----------
+   0011 // result => 1 | 2 = 3 (Binary: 0011)
+```  
 #### Bitwise XOR `^`  
-The bitwise XOR operator `^` compares the corresponding bits of two operands and produces a result where each bit is set if only one of the corresponding bits is set. ⤵️
+The bitwise XOR operator `^` performs a bitwise OR operation on each corresponding bit of two operands. The resulting bit is set to 1 if the two bits being compared are different (one is 0 and the other is 1); otherwise, it is set to 0 if the bits are the same (both 0 or both 1). ⤵️
 ```
-unsigned int a = 5;      // 0101 in binary
-unsigned int b = 3;      // 0011 in binary
-unsigned int result = a ^ b;   // 0110 in binary
+   0101 // binary representation of 5
+ ^ 0011 // binary representation of 3
+-----------
+   0110 // result => 5 | 3 = 6 (Binary: 0110)
 ```
