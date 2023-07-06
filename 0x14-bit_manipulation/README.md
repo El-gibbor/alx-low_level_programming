@@ -16,7 +16,7 @@ unsigned int a = 5;      // 0101 in binary
 unsigned int b = 3;      // 0011 in binary
 unsigned int result = a & b;   // 0001 in binary
 ```
-In the above example, the result is 1 because the binary representation of `a` and `b` has only the rightmost bit set.
+In the above example, the result is 1 because AND is 1 when both bits are 1 and the binary representation of `a` and `b` has only the rightmost bit set.
 
 #### Bitwise OR `|`  
 The bitwise OR operator `|` compares the corresponding bits of two operands and produces a result where each bit is set if at least one of the corresponding bits is set. ⤵️ 
