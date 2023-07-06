@@ -1,4 +1,4 @@
-![Bit image](image.png)
+![Screenshot 2023-07-06 132647](https://github.com/softlink2/alx-low_level_programming/assets/121310192/82e30e10-8b61-4475-bf1f-e06d8b36b1b3)
 # 0x14-bit_manipulation
 From the task exercises in this project, we explored and implemented how to manipulate bits and use bitwise operators. Bit manipulation involves performing operations on individual bits of binary data. It is a powerful technique used for various purposes, such as optimizing code, implementing data structures, and working with low-level operations.  
 ## Bitwise Operators  
