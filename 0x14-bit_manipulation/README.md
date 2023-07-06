@@ -36,6 +36,10 @@ The bitwise XOR operator `^` performs a bitwise OR operation on each correspondi
 #### Bitwise NOT `~`  
 It is a unary operator that compliments each bit one by one. It flips the bits of its operand. Each 0 is converted to 1, and each 1 is converted to 0. ⤵️  
 ```
-~0111 // decimal: 7
+~ 0111 // decimal: 7
 ------
-1000 // result => ~7 = 8 (Binary: 1000)
+  1000 // result => ~ 7 = 8 (Binary: 1000)
+```
+#### Bitwise left `<<` and right `>>` shift  
+Syntax: `value << n`
+The left shift operator shifts the bits of the value to the left by `n` positions and fills the vacant bit positions on the right with zeroes.
