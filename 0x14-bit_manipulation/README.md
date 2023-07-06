@@ -41,5 +41,5 @@ It is a unary operator that compliments each bit one by one. It flips the bits o
   1000 // result => ~ 7 = 8 (Binary: 1000)
 ```
 #### Bitwise left `<<` and right `>>` shift  
-Syntax: `value << n`
-The left shift operator shifts the bits of the value to the left by `n` positions and fills the vacant bit positions on the right with zeroes.
+Syntax: `value << n` The left shift operator shifts the bits of the value to the left by `n` positions and fills the vacant bit positions on the right with zeroes.  
+Syntax: `value >> n` The right shift operator shifts the bits of the value to the right by `n` positions. it fills the vacant bit positions on the left with zeroes. 
