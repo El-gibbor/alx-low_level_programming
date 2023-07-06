@@ -1,5 +1,5 @@
 # 0x13-more_singly_linked_lists  
-This project builds upon our [previous](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x12-singly_linked_lists) exploration of C - singly linked lists, which covered basic operations like creating a linked list, inserting nodes at the begining and end, returning the length of nodes in a list and printing the list. This time we are delving deeper and further explore and implement some more complex operations, such as deleting the head node and a node at a given index, as well as summing all the elements/data in the linked list.  
+This project builds upon our [previous](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x12-singly_linked_lists) exploration of C - singly linked lists, which covered basic operations like creating a linked list, inserting nodes at the begining and end, returning the length of nodes in a list and printing the list. This time we are delving deeper to further explore and implement some more complex operations, such as deleting the head node and a node at a given index, as well as summing all the elements/data in the linked list.  
 ## Operations  
 ### Deletion, Insertion, Sum, Reverse, Retrieve, etc     
 * `int pop_listint(listint_t **head);` Implement a function that deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
