@@ -20,16 +20,22 @@ The bitwise AND operator `&` compares the corresponding bits of two operands. Th
 #### Bitwise OR `|`  
 The bitwise OR operator `|` Compares corresponding bits of the operands and returns a new value where each bit position is set to 1 if either the corresponding bit in the first number or the second number is 1. Otherwise, if both bits are 0, the result will also have 0 at that position. ⤵️ 
 ```
-   0001 // binary representation of 1
-OR 0010 // binary representation of 2
+   0001 // decimal: 1
+OR 0010 // decimal: 2
 -----------
    0011 // result => 1 | 2 = 3 (Binary: 0011)
 ```  
 #### Bitwise XOR `^`  
 The bitwise XOR operator `^` performs a bitwise OR operation on each corresponding bit of two operands. The resulting bit is set to 1 if the two bits being compared are different (one is 0 and the other is 1); otherwise, it is set to 0 if the bits are the same (both 0 or both 1). ⤵️
 ```
-   0101 // binary representation of 5
- ^ 0011 // binary representation of 3
+   0101 // decimal: 5
+ ^ 0011 //decimal: 3
 -----------
    0110 // result => 5 ^ 3 = 6 (Binary: 0110)
 ```
+#### Bitwise NOT `~`  
+It is a unary operator that compliments each bit one by one. It flips the bits of its operand. Each 0 is converted to 1, and each 1 is converted to 0. ⤵️  
+```
+~0111 // decimal: 7
+-----------
+  1000 // result => ~7 = 
