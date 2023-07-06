@@ -38,4 +38,4 @@ It is a unary operator that compliments each bit one by one. It flips the bits o
 ```
 ~0111 // decimal: 7
 -----------
-  1000 // result => ~7 = 
+  1000 // result => ~7 = 8 (Binary: 1000)
