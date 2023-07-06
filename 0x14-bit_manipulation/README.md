@@ -31,5 +31,5 @@ The bitwise XOR operator `^` performs a bitwise OR operation on each correspondi
    0101 // binary representation of 5
  ^ 0011 // binary representation of 3
 -----------
-   0110 // result => 5 | 3 = 6 (Binary: 0110)
+   0110 // result => 5 ^ 3 = 6 (Binary: 0110)
 ```
