@@ -1,4 +1,4 @@
-# 0x14-bit_manipulation  
+# 0x14-bit_manipulation
 From the task exercises in this project, we explored and implemented how to manipulate bits and use bitwise operators. Bit manipulation involves performing operations on individual bits of binary data. It is a powerful technique used for various purposes, such as optimizing code, implementing data structures, and working with low-level operations.  
 ## Bitwise Operators  
 C provides bitwise operators that enable the manipulation of individual bits within a value. The following bitwise operators are commonly used:
