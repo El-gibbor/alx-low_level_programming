@@ -31,7 +31,6 @@ int _strlen(const char *s)
  * Return: converted num or 0 if there is one or more chars in
  * the string b that is not 0 or 1 of if b is NULL
  */
-
 unsigned int binary_to_uint(const char *b)
 {
 	int i, bits, bin_to_uint = 0, len_b = _strlen(b);
