@@ -8,7 +8,7 @@
  */
 unsigned int raise_to_pow(unsigned int a, unsigned int b)
 {
-    return ((a == 1) ? a : ((b == 0) ? 1 : a * raise_to_pow(a, b - 1)));
+	return ((a == 1) ? a : ((b == 0) ? 1 : a * raise_to_pow(a, b - 1)));
 }
 
 /**
