@@ -33,13 +33,13 @@ int _strlen(const char *s)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, bits, bin_to_uint = 0, len_b = _strlen(b);
-
-	i = len_b - 1;
+	int i, bits, len_b, bin_to_uint = 0;
 
 	if (!b)
 		return (0);
 
+	len_b = _strlen(b);
+	i = len_b - 1;
 	for (i = (len_b - 1); i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
