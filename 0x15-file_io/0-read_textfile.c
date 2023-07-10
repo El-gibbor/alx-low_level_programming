@@ -9,7 +9,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int openFileDesc, readFileDesc, writeFileDesc = 0;
-	char *mallocLetters;
+	char *mallocBuff;
 
 	if (!filename)
 		return (0);
@@ -18,21 +18,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (openFileDesc == -1)
 		return (0);
 
-	mallocLetters = malloc(letters);
-	if (!mallocLetters)
+	mallocBuff = malloc(letters);
+	if (!mallocBuff)
 	{
 		close(openFileDesc);
 		return (0);
 	}
-	readFileDesc = read(openFileDesc, mallocLetters, letters);
+	readFileDesc = read(openFileDesc, mallocBuff, letters);
 	if (readFileDesc == -1)
 		return (0);
 
-	writeFileDesc = write(STDOUT_FILENO, mallocLetters, letters);
+	writeFileDesc = write(STDOUT_FILENO, mallocBuff, readFileDesc);
 	if (writeFileDesc == -1)
 		return (0);
 
-	free(mallocLetters);
+	free(mallocBuff);
 	close(openFileDesc);
 	return (writeFileDesc);
 }
