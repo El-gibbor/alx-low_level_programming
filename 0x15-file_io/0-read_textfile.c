@@ -27,7 +27,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	readFileDesc = read(openFileDesc, mallocBuff, letters);
 	if (readFileDesc == -1)
 		return (0);
-
 	writeFileDesc = write(STDOUT_FILENO, mallocBuff, readFileDesc);
 	if (writeFileDesc == -1)
 		return (0);
