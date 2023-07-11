@@ -17,16 +17,16 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (append_to_file == -1)
 		return (-1);
 
-	if (!text_content)
-		return (-1);
-	while (text_content[lenText]) /* len of str/text to append */
-		lenText++;
-
-	appendText = write(append_to_file, text_content, lenText);
-	if (appendText == -1)
+	if (text_content)
 	{
-		close(append_to_file);
-		return (-1);
+		while (text_content[lenText]) /* len of str/text to append */
+			lenText++;
+		appendText = write(append_to_file, text_content, lenText);
+		if (appendText == -1)
+		{
+			close(append_to_file);
+			return (-1);
+		}
 	}
 	close(append_to_file);
 	return (1);
