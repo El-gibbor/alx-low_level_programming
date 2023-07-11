@@ -8,7 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int writeNewFile, len, newFile;
+	int writeNewFile, len = 0, newFile;
 
 	if (!filename)
 		return (-1);
@@ -27,8 +27,10 @@ int create_file(const char *filename, char *text_content)
 	}
 	writeNewFile = write(newFile, text_content, len);
 	if (writeNewFile == -1)
+    {
+        close(newFile);
 		return (-1);
-
+    }
 	close(newFile);
 	return (1);
 }
