@@ -27,10 +27,10 @@ int create_file(const char *filename, char *text_content)
 	}
 	writeNewFile = write(newFile, text_content, len);
 	if (writeNewFile == -1)
-    {
-        close(newFile);
+	{
+		close(newFile);
 		return (-1);
-    }
+	}
 	close(newFile);
 	return (1);
 }
