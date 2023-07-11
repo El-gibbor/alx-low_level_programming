@@ -20,9 +20,11 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	while (text_content[len] && text_content) /* length of the string */
+    if (text_content != NULL)
+    {
+	    while (text_content[len]) /* length of the string */
 		len++;
-
+    }
 	writeNewFile = write(newFile, text_content, len);
 	if (writeNewFile == -1)
 		return (-1);
