@@ -46,13 +46,12 @@ void copy_to_file(char *fileNameFrom, char *fileNameTo)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileNameTo);
 			exit(99);
 		}
-		if (read_from == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
-			exit(98);
-		}
 	}
-	
+	if (read_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
+		exit(98);
+	}
 	closeFile(file_from);
 	closeFile(file_to);
 }
