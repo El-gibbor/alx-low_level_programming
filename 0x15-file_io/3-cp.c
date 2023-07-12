@@ -26,32 +26,34 @@ void copy_to_file(char *fileNameFrom, char *fileNameTo)
 	int file_to, file_from, write_to, read_from;
 	char buff[1024];
 
-	file_to = open(fileNameTo, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileNameTo);
-		exit(99);
-	}
 	file_from = open(fileNameFrom, O_RDONLY);
 	if (file_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
 		exit(98);
 	}
-	read_from = read(file_from, buff, 1024);
-	if (read_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
-		exit(98);
-	}
-	write_to = write(file_to, buff, read_from);
-	if (write_to == -1)
+	file_to = open(fileNameTo, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (file_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileNameTo);
 		exit(99);
 	}
-	closeFile(file_to);
+	while ((read_from = read(file_from, buff, 1024)) > 0)
+	{
+		if (read_from == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
+			exit(98);
+		}
+		write_to = write(file_to, buff, read_from);
+		if (write_to == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileNameTo);
+			exit(99);
+		}
+	}
 	closeFile(file_from);
+	closeFile(file_to);
 }
 
 /**
