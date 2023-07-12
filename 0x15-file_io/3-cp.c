@@ -38,6 +38,7 @@ void copy_to_file(char *fileNameFrom, char *fileNameTo)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileNameTo);
 		exit(99);
 	}
+	/*read 1024 bytes at each sys call till the file is empty*/
 	while ((read_from = read(file_from, buff, 1024)) > 0)
 	{
 		write_to = write(file_to, buff, read_from);
@@ -47,7 +48,7 @@ void copy_to_file(char *fileNameFrom, char *fileNameTo)
 			exit(99);
 		}
 	}
-	if (read_from == -1)
+	if (read_from == -1) /*validate the success of read()*/
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fileNameFrom);
 		exit(98);
