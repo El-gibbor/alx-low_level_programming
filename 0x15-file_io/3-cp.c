@@ -41,7 +41,7 @@ void copy_to_file(char *fileNameFrom, char *fileNameTo)
 	read_from = read(file_from, buff, 1024);
 	if (read_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", fileNameFrom);
+		dprintf(2, "Error: Can't read from file %s\n", fileNameFrom);
 		exit(98);
 	}
 	write_to = write(file_to, buff, read_from);
