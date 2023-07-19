@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+int get_endianness(void);
 unsigned int raise_to_pow(unsigned int a, unsigned int b);
 int _strlen(const char *s);
 unsigned int binary_to_uint(const char *b);
