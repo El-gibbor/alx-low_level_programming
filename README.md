@@ -1,7 +1,7 @@
 ![ggggg](https://github.com/El-gibbor/alx-low_level_programming/assets/107848793/f64100fd-d921-401a-ada8-77cf7d4f2dcd)
-# C Low-Level Programming ⭐  
+# C Low-Level Programming ⋆｡°✮
 Welcome to my C Low-Level Programming repository! This collection of projects and exercises is tailored for all [Alx](www.alxafrica.com) Software Engineering trainees, with a primary focus on low-level programming concepts using the C language. By delving into this track, I've gained a strong foundation in comprehending the inner workings of my programs, memory management, and a deeper understanding of computer systems.  
-## Projects/tasks Workspace  
+## 📚 Projects/task module   
 |🧠 Concepts |📂 Directories |
 |---------|------------|
 | Hello world! | [0x00-hello_world](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x00-hello_world)|
@@ -27,7 +27,7 @@ Welcome to my C Low-Level Programming repository! This collection of projects an
 |File handling (input/output)|[0x15-file_io](https://github.com/El-gibbor/alx-low_level_programming/tree/master/0x15-file_io)
 |Write your own ```_printf() Func```|[printf](https://github.com/El-gibbor/printf)|
 |Write your own shell ```./hsh```|[Simple Shell](https://github.com/El-gibbor/simple_shell)|
-### ⚠️ To my Peers and Successors:  
+### ⚠️ To my peers and successors:  
 Please avoid directly copying and pasting the code from this repository solely to pass your checks. Such an approach is self-deceit, as it denies you the opportunity to truly learn. Besides, this practice can be detrimental to your career growth. Remember, employers value more than just your ability to pass checkers; they seek individuals who genuinely understand the concepts and can implement them effectively.
 
 Instead, focus on grasping the concepts presented here and seek assistance if you encounter challenges while implementing what you've learned. I'm readily [available](https://twitter.com/Mr_Elgibbor) to offer help and support in your learning journey. Embrace the learning process, and it will undoubtedly contribute to your success as a skilled software engineer.
