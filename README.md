@@ -1,5 +1,5 @@
 ![ggggg](https://github.com/El-gibbor/alx-low_level_programming/assets/107848793/f64100fd-d921-401a-ada8-77cf7d4f2dcd)
-# C Low-Level Programming  
+# C Low-Level Programming ⭐  
 Welcome to my C Low-Level Programming repository! This collection of projects and exercises is tailored for all [Alx](www.alxafrica.com) Software Engineering trainees, with a primary focus on low-level programming concepts using the C language. By delving into this track, I've gained a strong foundation in comprehending the inner workings of my programs, memory management, and a deeper understanding of computer systems.  
 ## Projects/tasks Workspace  
 |🧠 Concepts |📂 Directories |
