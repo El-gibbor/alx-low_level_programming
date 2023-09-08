@@ -5,7 +5,6 @@
  * @size: The size of the array.
  * Return: A pointer to the newly created hash table, or NULL on failure.
  */
-
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int i;
