@@ -10,5 +10,6 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	unsigned long int hash = hash_djb2(key);
 
+    /*ensures an index within the size range of the array*/
 	return (hash % size);
 }
