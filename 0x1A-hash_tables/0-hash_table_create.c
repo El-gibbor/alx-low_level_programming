@@ -7,22 +7,22 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	unsigned long int i;
-	hash_table_t *new_table;
+	unsigned long int i = 0;
+	hash_table_t *new_h_table;
 
-	new_table = malloc(sizeof(hash_table_t));
-	if (!new_table)
+	new_h_table = malloc(sizeof(hash_table_t));
+	if (!new_h_table)
 		return (NULL);
 
-	(*new_table).size = size;
-	(*new_table).array = malloc(sizeof(hash_node_t *) * size);
+	(*new_h_table).size = size;
+	(*new_h_table).array = malloc(sizeof(hash_node_t *) * size);
 
-	if (!(*new_table).array)
+	if (!(*new_h_table).array)
 		return (NULL);
 
-	/*populate each array elem (bucket) to NULL, (no hash nodes stored)*/
-	for (i = 0; i < size; i++)
-		(*new_table).array[i] = NULL;
+	/*populate each array elem (bucket) to NULL (no hash nodes stored)*/
+	for (; i < size; i++)
+		(*new_h_table).array[i] = NULL;
 
-	return (new_table);
+	return (new_h_table);
 }
