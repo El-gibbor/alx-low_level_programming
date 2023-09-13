@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * my_hash_table_get - Retrieve a hash table value based on its key.
+ * hash_table_get - Retrieve a hash table value based on its key.
  * @table: The hash table to search.
  * @key: The key of the valueto be retrieved
  * Return: value associated with the specified key if found; otherwise, NULL.
