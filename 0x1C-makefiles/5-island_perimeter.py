@@ -23,4 +23,5 @@ def island_perimeter(grid):
                 j == 0 or row[j - 1] == 0,
             )
             perimeter += sum(edges)
+
     return perimeter
