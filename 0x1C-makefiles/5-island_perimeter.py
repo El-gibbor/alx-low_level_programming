@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Island perimeter computing module.
+"""This module hold methods that computes the
+perimeter of the island described in grid
 """
 
 
